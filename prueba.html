@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba</title>
+</head>
+<body>
+  <script>
+    const fetchDatos = async() => {
+      const response = await fetch('http://localhost/api-flight/users/');
+      const data = await response.json();
+      console.log(data);
+    }
+    fetchDatos();
+
+    // fetch('http://localhost/api-flight/users/')
+    //   .then(response => response.json())
+    //   .then(json => console.log(json))
+    //   .catch(err => console.error('error:' + err));
+  </script>
+</body>
+</html>
